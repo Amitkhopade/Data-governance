@@ -209,7 +209,9 @@ const Dashboard = () => {
           </div>
         </CardContent>
       </Card>
-    </div>
+      </TabsContent>
+    </Tabs>
+  </div>
   );
 };
 
