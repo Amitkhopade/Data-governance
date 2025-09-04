@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://amitkhopade.github.io/Data-governance/",
+  "homepage": "https://amitkhopade.github.io/comply-nav-insight-17/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build:gh-pages": "vite build --base=/Data-governance/"
+    "build:gh-pages": "vite build --base=/comply-nav-insight-17/"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
