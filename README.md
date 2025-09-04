@@ -70,7 +70,7 @@ This project is built with:
 
 ## Deployment
 
-This project is configured to deploy to GitHub Pages automatically. You can view the live site at: [https://amitkhopade.github.io/comply-nav-insight-17/](https://amitkhopade.github.io/comply-nav-insight-17/)
+This project is configured to deploy to GitHub Pages automatically. You can view the live site at: [https://amitkhopade.github.io/Data-governance/](https://amitkhopade.github.io/Data-governance/)
 
 ### Automatic Deployment
 
@@ -109,7 +109,7 @@ npm run deploy
    - Branch: gh-pages / (root)
 4. Click Save
 
-The dashboard will be accessible at the root URL: [https://amitkhopade.github.io/comply-nav-insight-17/](https://amitkhopade.github.io/comply-nav-insight-17/)
+The dashboard will be accessible at the root URL: [https://amitkhopade.github.io/Data-governance/](https://amitkhopade.github.io/Data-governance/)
 
 ## Backend Setup
 

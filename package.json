@@ -1,9 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "data-governance-platform",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://amitkhopade.github.io/comply-nav-insight-17/",
+  "homepage": "https://amitkhopade.github.io/Data-governance/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
