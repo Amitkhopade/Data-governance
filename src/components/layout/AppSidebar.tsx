@@ -37,6 +37,7 @@ const navigationItems = [
   { title: "Audit Evidence", url: "/audit", icon: Archive },
   { title: "Source Completeness", url: "/sources", icon: Server },
   { title: "SQL Connector", url: "/sql-connector", icon: Link },
+  { title: "AI Agent", url: "/agent", icon: Bot },
 ];
 
 export function AppSidebar() {

@@ -10,6 +10,7 @@ import DataQuality from "./pages/DataQuality";
 import PolicyStudio from "./pages/PolicyStudio";
 import SourceCompleteness from "./pages/SourceCompleteness";
 import SqlConnector from "./pages/SqlConnector";
+import Agent from "./pages/Agent";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/audit" element={<div className="p-6">Audit Evidence Lake - Coming Soon</div>} />
             <Route path="/sources" element={<SourceCompleteness />} />
             <Route path="/sql-connector" element={<SqlConnector />} />
+            <Route path="/agent" element={<Agent />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
