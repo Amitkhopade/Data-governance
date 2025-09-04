@@ -1,5 +1,10 @@
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { KPICard } from "@/components/dashboard/KPICard";
 import { AIInsightsPanel } from "@/components/dashboard/AIInsightsPanel";
+import { ChatAssistant } from "@/components/dashboard/ChatAssistant";
+import { PolicyUpload } from "@/components/dashboard/PolicyUpload";
+import { SQLQueryEditor } from "@/components/dashboard/SQLQueryEditor";
+import { DataLineage } from "@/components/dashboard/DataLineage";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -11,7 +16,8 @@ import {
   AlertTriangle,
   TrendingUp,
   GitBranch,
-  Clock
+  Clock,
+  Bot
 } from "lucide-react";
 
 const kpiData = [
@@ -103,24 +109,34 @@ const Dashboard = () => {
         ))}
       </div>
 
-      {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Recent Issues */}
-        <div className="lg:col-span-2">
-          <Card className="shadow-card">
-            {/* <!-- AI_AGENT:RISK --> */}
-            {/* <!-- AI_AGENT:POLICY --> */}
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <CardTitle className="flex items-center gap-2">
-                  <AlertTriangle className="w-5 h-5 text-warning" />
-                  Recent Issues
-                </CardTitle>
-                <Badge variant="outline" className="bg-warning/10 text-warning border-warning/20">
-                  {recentIssues.length} Open
-                </Badge>
-              </div>
-            </CardHeader>
+      {/* Main Content */}
+      <Tabs defaultValue="dashboard" className="space-y-4">
+        <TabsList>
+          <TabsTrigger value="dashboard">Dashboard</TabsTrigger>
+          <TabsTrigger value="assistant">Chat Assistant</TabsTrigger>
+          <TabsTrigger value="query">SQL Query</TabsTrigger>
+          <TabsTrigger value="lineage">Data Lineage</TabsTrigger>
+          <TabsTrigger value="policies">Policies</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="dashboard">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* Recent Issues */}
+            <div className="lg:col-span-2">
+              <Card className="shadow-card">
+                {/* <!-- AI_AGENT:RISK --> */}
+                {/* <!-- AI_AGENT:POLICY --> */}
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <CardTitle className="flex items-center gap-2">
+                      <AlertTriangle className="w-5 h-5 text-warning" />
+                      Recent Issues
+                    </CardTitle>
+                    <Badge variant="outline" className="bg-warning/10 text-warning border-warning/20">
+                      {recentIssues.length} Open
+                    </Badge>
+                  </div>
+                </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 {recentIssues.map((issue) => (
