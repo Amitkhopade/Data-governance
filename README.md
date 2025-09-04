@@ -70,16 +70,28 @@ This project is built with:
 
 ## Deployment
 
-This project is configured to deploy to GitHub Pages automatically. Here's how it works:
+This project is configured to deploy to GitHub Pages automatically. You can view the live site at: [https://amitkhopade.github.io/comply-nav-insight-17/](https://amitkhopade.github.io/comply-nav-insight-17/)
+
+### Automatic Deployment
 
 1. Every push to the `main` branch triggers the deployment workflow
 2. The workflow builds the project and deploys it to GitHub Pages
-3. You can view the deployed site at: [https://amitkhopade.github.io/comply-nav-insight-17/](https://amitkhopade.github.io/comply-nav-insight-17/)
 
 ### Manual Deployment
 
 To deploy manually:
 
+1. Install dependencies:
+```sh
+npm install
+```
+
+2. Install gh-pages package:
+```sh
+npm install -D gh-pages
+```
+
+3. Build and deploy:
 ```sh
 # Build the project
 npm run build
@@ -87,6 +99,17 @@ npm run build
 # Deploy to GitHub Pages
 npm run deploy
 ```
+
+### GitHub Pages Setup
+
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" under "Code and automation"
+3. Under "Build and deployment":
+   - Source: Deploy from a branch
+   - Branch: gh-pages / (root)
+4. Click Save
+
+The dashboard will be accessible at the root URL: [https://amitkhopade.github.io/comply-nav-insight-17/](https://amitkhopade.github.io/comply-nav-insight-17/)
 
 ## Backend Setup
 
