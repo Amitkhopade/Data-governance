@@ -1,18 +1,26 @@
-# Welcome to your Lovable project
+# Comply Nav Insight
 
-## Project info
+A modern data governance and compliance navigation platform built with React, TypeScript, and FastAPI.
 
-**URL**: https://lovable.dev/projects/53392525-d27e-4cd8-b986-f2d6113cf71d
+## Features
 
-## How can I edit this code?
+- 📊 Interactive Dashboard with KPI tracking
+- 📂 Data Catalog and Lineage Visualization
+- 📋 Policy Management Studio
+- 🔍 Data Quality Monitoring
+- 📈 Source Completeness Tracking
+- 💻 SQL Query Interface
+- 🤖 AI-powered Chat Assistant
 
-There are several ways of editing your application.
+## Technologies
 
-**Use Lovable**
+- Frontend: React, TypeScript, Vite
+- UI Components: Radix UI, Tailwind CSS
+- Visualization: D3.js
+- Backend: FastAPI, OpenRouter LLM
+- Deployment: GitHub Pages
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/53392525-d27e-4cd8-b986-f2d6113cf71d) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+## Development
 
 **Use your preferred IDE**
 
@@ -60,14 +68,43 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/53392525-d27e-4cd8-b986-f2d6113cf71d) and click on Share -> Publish.
+This project is configured to deploy to GitHub Pages automatically. Here's how it works:
 
-## Can I connect a custom domain to my Lovable project?
+1. Every push to the `main` branch triggers the deployment workflow
+2. The workflow builds the project and deploys it to GitHub Pages
+3. You can view the deployed site at: [https://amitkhopade.github.io/comply-nav-insight-17/](https://amitkhopade.github.io/comply-nav-insight-17/)
 
-Yes, you can!
+### Manual Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+To deploy manually:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```sh
+# Build the project
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## Backend Setup
+
+The backend requires additional configuration:
+
+1. Install Python dependencies:
+```sh
+cd backend
+pip install -r requirements.txt
+```
+
+2. Set up environment variables:
+```sh
+cp .env.example .env
+# Edit .env with your OpenRouter API key
+```
+
+3. Run the backend:
+```sh
+uvicorn agent_backend:app --reload
+```
