@@ -93,11 +93,17 @@ npm install -D gh-pages
 
 3. Build and deploy:
 ```sh
-# Build the project
-npm run build
+# Install dependencies
+npm install
+
+# Build for GitHub Pages
+npm run build:gh-pages
 
 # Deploy to GitHub Pages
 npm run deploy
+
+# Or simply run both commands in sequence
+npm run predeploy && npm run deploy
 ```
 
 ### GitHub Pages Setup
